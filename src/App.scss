@@ -6,10 +6,22 @@
   transition: all .3s;
   font-family: 'Roboto Thin', sans-serif;
   font-weight: lighter;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 a {
   color: #000;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  font-size: 1em;
+  display: flex;
 }
 
 @import "Header";

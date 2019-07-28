@@ -4,10 +4,19 @@
   padding: 0;
   transition: all .3s;
   font-family: 'Roboto Thin', sans-serif;
-  font-weight: lighter; }
+  font-weight: lighter;
+  outline: none; }
+  *:focus {
+    outline: none; }
 
 a {
   color: #000; }
+
+button {
+  background: transparent;
+  border: 0;
+  font-size: 1em;
+  display: flex; }
 
 .header {
   display: flex;
@@ -25,6 +34,24 @@ a {
   .header .desc {
     margin-top: 10px;
     margin-bottom: 40px; }
+
+.miniHeader {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  top: -50px;
+  background: #fff;
+  font-size: 2em;
+  box-shadow: none; }
+  .miniHeader.open {
+    top: 0;
+    box-shadow: black 0px 3px 10px -1px; }
 
 @media (max-width: 400px) {
   .header {
