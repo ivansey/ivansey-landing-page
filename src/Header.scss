@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: #fff;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  padding-left: 50px;
+
+  & a {
+    color: #fff;
+  }
+
+  & .title {
+    margin-top: 20px;
+  }
+
+  & .desc {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    padding-left: 20px;
+  }
+}

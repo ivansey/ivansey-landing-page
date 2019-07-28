@@ -1,0 +1,13 @@
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.technology {
+  display: flex;
+
+  & .title {
+    border: 0;
+  }
+}

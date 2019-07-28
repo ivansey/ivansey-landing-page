@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  flex-direction: column; }
+
+.technology {
+  display: flex; }
+  .technology .title {
+    border: 0; }
+
+/*# sourceMappingURL=Technology.css.map */
