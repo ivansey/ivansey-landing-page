@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "./Header"
 import About from "./About";
+import Costs from "./Costs";
 import StackFront from "./StackFront";
 import StackBack from "./StackBack";
 import Example from "./Example";
@@ -13,6 +14,7 @@ function App() {
         <div className="App">
             <Header/>
             <About/>
+            <Costs/>
             <StackFront/>
             <StackBack/>
             <Example/>
