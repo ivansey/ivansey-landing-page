@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,IAAK;EACH,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;;AAGxB,WAAY;EACV,OAAO,EAAE,IAAI;EAEb,kBAAS;IACP,MAAM,EAAE,CAAC",
-"sources": ["Technology.scss"],
-"names": [],
-"file": "Technology.css"
-}

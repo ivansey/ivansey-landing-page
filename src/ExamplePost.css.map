@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,KAAM;EACJ,KAAK,EAAE,WAAW;EAClB,SAAS,EAAE,KAAK;EAChB,UAAU,EAAE,uBAAuB;EACnC,aAAa,EAAE,IAAI;EAEnB,YAAS;IACP,MAAM,EAAE,CAAC",
-"sources": ["ExamplePost.scss"],
-"names": [],
-"file": "ExamplePost.css"
-}
