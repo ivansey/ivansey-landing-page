@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from "./Header"
 import About from "./About";
-import Costs from "./Costs";
 import StackFront from "./StackFront";
 import StackBack from "./StackBack";
 import Example from "./Example";
@@ -39,7 +38,6 @@ class App extends React.Component {
                 <Header/>
                 <MiniHeader status={ this.state.miniHeader }/>
                 <About/>
-                <Costs/>
                 <StackFront/>
                 <StackBack/>
                 <Example/>
