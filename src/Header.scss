@@ -1,11 +1,10 @@
 .header {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   padding-top: 40px;
   padding-bottom: 60px;
-  color: #fff;
-  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  color: #000;
   padding-left: 50px;
 
   & a {
@@ -19,12 +18,13 @@
   & .desc {
     margin-top: 10px;
     margin-bottom: 40px;
+    font-style: italic;
   }
 }
 
 .miniHeader {
   position: fixed;
-  width: 100%;
+  width: max-content;
   height: 50px;
   z-index: 10;
   display: flex;
@@ -36,6 +36,7 @@
   background: #fff;
   font-size: 2em;
   box-shadow: none;
+  display: none;
 
   &.open {
     top: 0;
