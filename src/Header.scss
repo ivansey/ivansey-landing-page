@@ -21,29 +21,6 @@
     font-style: italic;
   }
 }
-
-.miniHeader {
-  position: fixed;
-  width: max-content;
-  height: 50px;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  top: -50px;
-  background: #fff;
-  font-size: 2em;
-  box-shadow: none;
-  display: none;
-
-  &.open {
-    top: 0;
-    box-shadow: black 0px 3px 10px -1px;
-  }
-}
-
 @media (max-width: 400px) {
   .header {
     padding-left: 20px;
