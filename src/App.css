@@ -1,9 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i&display=swap");
 * {
   margin: 0;
   padding: 0;
   transition: all .3s;
-  font-family: 'Roboto Thin', sans-serif;
+  font-family: 'Product Sans Regular', sans-serif;
   font-weight: lighter;
   outline: none; }
   *:focus {
@@ -34,25 +33,6 @@ button {
     margin-top: 10px;
     margin-bottom: 40px;
     font-style: italic; }
-
-.miniHeader {
-  position: fixed;
-  width: max-content;
-  height: 50px;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  top: -50px;
-  background: #fff;
-  font-size: 2em;
-  box-shadow: none;
-  display: none; }
-  .miniHeader.open {
-    top: 0;
-    box-shadow: black 0px 3px 10px -1px; }
 
 @media (max-width: 400px) {
   .header {

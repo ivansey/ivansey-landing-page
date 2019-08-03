@@ -6,6 +6,7 @@ import StackBack from "./StackBack";
 import Example from "./Example";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import './fonts/googleSans/style.css';
 import './App.css';
 
 class App extends React.Component {
