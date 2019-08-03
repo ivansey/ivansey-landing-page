@@ -6,8 +6,14 @@
 
 .technology {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 
   & .title {
-    border: 0;
+    font-size: 1.1em;
+  }
+
+  & .mdi {
+    font-size: 1.6em;
   }
 }
