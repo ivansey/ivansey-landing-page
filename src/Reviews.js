@@ -4,8 +4,8 @@ import Review from "./Review";
 class Reviews extends React.Component {
     render() {
         return <div className="page">
-            <h2 className="title">Примеры работ</h2>
-            <h3 className="subtitle">Примеров у меня немного, но я готов предложить небольшую скидку...</h3>
+            <h2 className="title">Отзывы</h2>
+            <h3 className="subtitle">Ниже есть отзывы моих клиентов</h3>
             <div className="row">
                 <Review title="Екатерина Булейко"
                              desc="Копирайтер"
