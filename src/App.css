@@ -25,13 +25,17 @@ button {
   padding-bottom: 60px;
   color: #000; }
   .header a {
-    color: #fff; }
+    color: #000; }
   .header .title {
     margin-top: 20px; }
   .header .desc {
     margin-top: 10px;
     margin-bottom: 40px;
     font-style: italic; }
+  .header .menu {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
 
 @media (max-width: 400px) {
   .header {
