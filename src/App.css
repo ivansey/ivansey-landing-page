@@ -30,6 +30,10 @@ button {
   display: flex;
 }
 
+body {
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -45,6 +49,7 @@ button {
 }
 .header .title {
   margin-top: 20px;
+  color: #d50000;
 }
 .header .desc {
   margin-top: 10px;
