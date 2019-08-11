@@ -26,6 +26,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
+
+    & a {
+      text-decoration: none;
+      transition: background-color .5s;
+
+      &:hover {
+        background-color: #909090;
+      }
+    }
   }
 }
 
