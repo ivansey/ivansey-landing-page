@@ -50,9 +50,11 @@ button {
 .header .menu a {
   text-decoration: none;
   transition: background-color 0.5s;
+  margin: 0;
+  padding: 5px 10px;
 }
 .header .menu a:hover {
-  background-color: #909090;
+  background-color: #bdbdbd;
 }
 
 @media (max-width: 400px) {
