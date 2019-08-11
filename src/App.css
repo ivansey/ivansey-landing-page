@@ -130,7 +130,8 @@ body {
 }
 
 .list * {
-  margin-right: 10px;
+  margin: 10px;
+  font-size: 1.5em;
 }
 
 .footer {
