@@ -9,6 +9,9 @@ import {BrowserRouter, Route} from "react-router-dom";
 import './fonts/googleSans/style.css';
 import './App.css';
 
+import {connect} from "react-redux";
+import store from './store';
+
 class App extends React.Component {
     render() {
         return (
