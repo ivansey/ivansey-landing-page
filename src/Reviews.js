@@ -1,11 +1,18 @@
 import React from 'react';
 import Review from "./Review";
+import MetaTags from "react-meta-tags";
 
 class Reviews extends React.Component {
     render() {
         return <div className="page">
             <h2 className="title">Отзывы</h2>
             <h3 className="subtitle">Ниже есть отзывы моих клиентов</h3>
+            <MetaTags>
+                <title>IvanSey Landing Page - Отзывы</title>
+                <meta name="description" content="Здесь опубликованы все отзывы"/>
+                <meta name="og:title" content="IvanSey Landing Page - Отзывы"/>
+                <meta name="og:description" content="Здесь опубликованы все отзывы"/>
+            </MetaTags>
             <div className="row">
                 <Review title="Екатерина Булейко"
                              desc="Копирайтер"
