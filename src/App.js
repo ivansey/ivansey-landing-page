@@ -6,18 +6,22 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Reviews from "./Reviews";
 import {BrowserRouter, Route} from "react-router-dom";
+import {connect} from "react-redux";
 import './fonts/googleSans/style.css';
 import './App.css';
+import MetaTags from "react-meta-tags";
 
-import {connect} from "react-redux";
-import store from './store';
 
 class App extends React.Component {
     render() {
         return (
-            <div className="App">
+            <div className={this.props.appStateActive.darkMode === false ? "App" : "App dark"}>
                 <BrowserRouter>
                     <Header/>
+                    <MetaTags>
+                        <meta name="theme-color"
+                              content={this.props.appStateActive.darkMode === false ? "#fff" : "#000"}/>
+                    </MetaTags>
                     <Route exact path="/" component={About}/>
                     <Route path="/example" component={Example}/>
                     <Route path="/reviews" component={Reviews}/>
@@ -29,4 +33,11 @@ class App extends React.Component {
     }
 }
 
-export default App;
+let mapStateToProps = (state) => {
+    return {
+        appState: state.appState,
+        appStateActive: state.appStateActive
+    }
+};
+
+export default connect(mapStateToProps)(App);

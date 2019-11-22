@@ -1,39 +1,36 @@
 * {
   margin: 0;
   padding: 0;
-  transition: all 0.3s;
-  font-family: "Product Sans Regular", sans-serif;
+  transition: all .3s;
+  font-family: 'Product Sans Regular', sans-serif;
   font-weight: lighter;
-  outline: none;
-}
-*:focus {
-  outline: none;
-}
+  outline: none; }
+  *:focus {
+    outline: none; }
 
 ::-webkit-scrollbar {
   background: transparent;
-  width: 10px;
-}
+  width: 10px; }
 
 ::-webkit-scrollbar-thumb {
-  background: #909090;
-}
+  background: #909090; }
 
 a {
-  color: #000;
-}
+  color: #000; }
 
 button {
   background: transparent;
   border: 0;
   font-size: 1em;
-  display: flex;
-}
+  display: flex; }
 
-body.dark {
+.App.dark {
   background: #000;
-  color: #fff;
-}
+  color: #fff; }
+  .App.dark a {
+    color: #fff; }
+  .App.dark .mdi {
+    color: #fff; }
 
 .header {
   display: flex;
@@ -41,78 +38,66 @@ body.dark {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 60px;
-  color: #000;
-}
-.header a {
-  color: #000;
-  margin-right: 5px;
-  margin-left: 5px;
-}
-.header .title {
-  margin-top: 20px;
-  color: #d50000;
-}
-.header .desc {
-  margin-top: 10px;
-  margin-bottom: 40px;
-  font-style: italic;
-}
-.header .menu {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.header .menu a {
-  text-decoration: none;
-  transition: background-color 0.5s;
-  margin: 0;
-  padding: 5px 10px;
-}
-.header .menu a:hover {
-  background-color: #bdbdbd;
-}
+  color: #000; }
+  .header a {
+    color: #000;
+    margin-right: 5px;
+    margin-left: 5px; }
+  .header .title {
+    margin-top: 20px;
+    color: #d50000; }
+  .header .desc {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-style: italic; }
+  .header .menu {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .header .menu a {
+      text-decoration: none;
+      transition: background-color .5s;
+      margin: 0;
+      padding: 5px 10px; }
+      .header .menu a:hover {
+        background-color: #bdbdbd; }
+
+.App.dark .header a {
+  color: #fff; }
+.App.dark .header h3 {
+  color: #fff; }
 
 @media (max-width: 400px) {
   .header {
-    width: 100%;
-  }
-}
+    width: 100%; } }
 .page {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 100px;
-}
-.page .title {
-  margin-bottom: 25px;
-  padding-bottom: 2px;
-}
-.page .subtitle {
-  margin-bottom: 20px;
-}
-.page .text {
-  margin-bottom: 2px;
-}
+  margin-bottom: 100px; }
+  .page .title {
+    margin-bottom: 25px;
+    padding-bottom: 2px; }
+  .page .subtitle {
+    margin-bottom: 20px; }
+  .page .text {
+    margin-bottom: 2px; }
 
 .row {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
 
 .technology {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.technology .title {
-  font-size: 1.1em;
-}
-.technology .mdi {
-  font-size: 1.6em;
-}
+  align-items: center; }
+  .technology .title {
+    font-size: 1.1em; }
+  .technology .mdi {
+    font-size: 1.6em; }
 
 .post {
   width: calc(100% - 10px);
@@ -120,20 +105,16 @@ body.dark {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-.post .title {
-  margin-bottom: 5px;
-  font-size: 1.2em;
-}
-.post * {
-  margin: 2px;
-}
+  text-align: center; }
+  .post .title {
+    margin-bottom: 5px;
+    font-size: 1.2em; }
+  .post * {
+    margin: 2px; }
 
 .list * {
   margin: 10px;
-  font-size: 1.5em;
-}
+  font-size: 1.5em; }
 
 .footer {
   display: flex;
@@ -141,7 +122,6 @@ body.dark {
   align-items: center;
   text-align: center;
   padding-top: 20px;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
 
 /*# sourceMappingURL=App.css.map */

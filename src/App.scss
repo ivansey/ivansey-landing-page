@@ -31,8 +31,18 @@ button {
   display: flex;
 }
 
-body {
-  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+
+.App.dark {
+  background: #000;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  .mdi {
+    color: #fff;
+  }
 }
 
 @import "Header";

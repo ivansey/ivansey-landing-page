@@ -41,6 +41,16 @@
   }
 }
 
+.App.dark .header {
+  a {
+    color: #fff;
+  }
+
+  h3 {
+    color: #fff;
+  }
+}
+
 @media (max-width: 400px) {
   .header {
     width: 100%;
