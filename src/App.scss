@@ -20,6 +20,11 @@
   background: #909090;
 }
 
+::grammar-error, ::spelling-error {
+  color: inherit;
+  background: #f00;
+}
+
 a {
   color: #000;
 }
