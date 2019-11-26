@@ -5,10 +5,12 @@ import Example from "./Example";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Reviews from "./Reviews";
+import Login from "./Login";
 import {BrowserRouter, Route} from "react-router-dom";
 import {connect} from "react-redux";
 import './fonts/googleSans/style.css';
 import './App.css';
+import '@mdi/font/css/materialdesignicons.min.css'
 import MetaTags from "react-meta-tags";
 
 
@@ -25,6 +27,7 @@ class App extends React.Component {
                     <Route exact path="/" component={About}/>
                     <Route path="/example" component={Example}/>
                     <Route path="/reviews" component={Reviews}/>
+                    <Route path="/admin/login" component={Login}/>
                 </BrowserRouter>
                 <Contact/>
                 <Footer/>
