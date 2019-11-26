@@ -3,10 +3,15 @@ import {Link} from "react-router-dom";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import {changeDarkMode} from "./actions";
+import cookies from "react-cookies";
 
 class Header extends React.Component {
     constructor(props) {
         super(props);
+
+        if (cookies.load("darkMode") === "true") {
+            this.props.changeDarkMode();
+        }
     }
 
     changeDarkMode = () => {
