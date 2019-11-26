@@ -31,17 +31,61 @@ button {
   display: flex;
 }
 
+a {
+  transition: background-color .5s;
+  margin: 0;
+  padding: 5px 10px;
+  width: max-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center;
+
+  & * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  border: 0;
+  background: #00f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    background: #00bbff;
+  }
+}
+
+input {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+}
 
 .App.dark {
   background: #000;
   color: #fff;
 
-  a {
+  & a {
     color: #fff;
   }
 
-  .mdi {
+  & .mdi {
     color: #fff;
+  }
+
+  & input {
+    background: #000 !important;
+    border-color: #fff;
+    color: #fff !important;
   }
 }
 

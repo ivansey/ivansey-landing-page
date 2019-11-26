@@ -24,6 +24,37 @@ button {
   font-size: 1em;
   display: flex; }
 
+a {
+  transition: background-color .5s;
+  margin: 0;
+  padding: 5px 10px;
+  width: max-content; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  align-items: center; }
+  form * {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+button {
+  border: 0;
+  background: #00f;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px; }
+  button:hover {
+    background: #00bbff; }
+
+input {
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000; }
+
 .App.dark {
   background: #000;
   color: #fff; }
@@ -31,6 +62,10 @@ button {
     color: #fff; }
   .App.dark .mdi {
     color: #fff; }
+  .App.dark input {
+    background: #000 !important;
+    border-color: #fff;
+    color: #fff !important; }
 
 .header {
   display: flex;
@@ -38,7 +73,8 @@ button {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 60px;
-  color: #000; }
+  color: #000;
+  align-items: center; }
   .header a {
     color: #000;
     margin-right: 5px;
@@ -55,12 +91,9 @@ button {
     justify-content: center;
     text-align: center; }
     .header .menu a {
-      text-decoration: none;
       transition: background-color .5s;
       margin: 0;
       padding: 5px 10px; }
-      .header .menu a:hover {
-        background-color: #bdbdbd; }
 
 .App.dark .header a {
   color: #fff; }
