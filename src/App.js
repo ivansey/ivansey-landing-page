@@ -6,15 +6,28 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Reviews from "./Reviews";
 import Login from "./Login";
+import Reg from "./Reg";
+import Admin from "./Admin";
 import {BrowserRouter, Route} from "react-router-dom";
 import {connect} from "react-redux";
+import {bindActionCreators} from "redux";
 import './fonts/googleSans/style.css';
 import './App.css';
 import '@mdi/font/css/materialdesignicons.min.css'
 import MetaTags from "react-meta-tags";
+import cookies from "react-cookies";
+import {changeDarkMode} from "./actions";
 
 
 class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        if (cookies.load("darkMode") === "true") {
+            this.props.changeDarkMode();
+        }
+    }
+
     render() {
         return (
             <div className={this.props.appStateActive.darkMode === false ? "App" : "App dark"}>
@@ -27,7 +40,12 @@ class App extends React.Component {
                     <Route exact path="/" component={About}/>
                     <Route path="/example" component={Example}/>
                     <Route path="/reviews" component={Reviews}/>
+                    <Route exact path="/admin" component={Admin}/>
                     <Route path="/admin/login" component={Login}/>
+                    <Route path="/admin/reg" component={Reg}/>
+                    <Route path="/admin/login/redirect" component={() => {
+                        window.location.href = "/admin";
+                    }}/>
                 </BrowserRouter>
                 <Contact/>
                 <Footer/>
@@ -38,9 +56,14 @@ class App extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        appState: state.appState,
         appStateActive: state.appStateActive
     }
 };
 
-export default connect(mapStateToProps)(App);
+let mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({
+        changeDarkMode: changeDarkMode
+    }, dispatch)
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

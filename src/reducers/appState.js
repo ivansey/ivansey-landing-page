@@ -1,3 +1,8 @@
 export default {
-    darkMode: false
+    darkMode: false,
+    resultCheckToken: false,
+    userInfo: {
+        _id: "",
+        email: ""
+    }
 }
