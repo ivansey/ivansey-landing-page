@@ -1,6 +1,17 @@
 # IvanSey Landing Page
 
-This application uses NodeJS and React. For installation, run `npm install`.
+This my landing page uses NodeJS and ReactJS. For installation, run `npm install`.
+
+## Requirement 
+
+- Material Design Icons 3.8.95
+- axios 0.19.0
+- react 16.8.6
+- redux 4.0.4
+- react-cookie 0.1.1
+- react-redux 7.1.1
+- react-router-dom 5.1.2
+- react-scripts 3.0.1
 
 ## Available Scripts
 

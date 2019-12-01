@@ -4,7 +4,8 @@
   transition: background-color .3s;
   font-family: 'Product Sans Regular', sans-serif;
   font-weight: lighter;
-  outline: none; }
+  outline: none;
+  will-change: color, background; }
   *:focus {
     outline: none; }
 
