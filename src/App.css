@@ -140,14 +140,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   align-items: center;
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  width: 100%; }
   .page .title {
     margin-bottom: 25px;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    width: 95%; }
   .page .subtitle {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    width: 95%; }
   .page .text {
-    margin-bottom: 2px; }
+    margin-bottom: 2px;
+    width: 95%; }
+  .page .row {
+    width: 95%; }
 
 .row {
   display: flex;
