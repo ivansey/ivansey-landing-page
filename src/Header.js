@@ -30,7 +30,7 @@ class Header extends React.Component {
     render() {
         console.log(this.props);
         return <div className="header">
-            <h1 className="title">IvanSey Landing Page</h1>
+            <h1 className="title">{"\< IvanSey Landing Page / >"}</h1>
             <h3 className="desc">Это мой небольшой лендинг. Тут я опишу, чем я занимаюсь, с чем работаю.</h3>
             {
                 this.props.appStateActive.darkMode === false
