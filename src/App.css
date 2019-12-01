@@ -29,6 +29,11 @@ a {
   will-change: color;
   color: #000; }
 
+.menuList {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 button {
   background: transparent;
   border: 0;
@@ -73,19 +78,19 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -webkit-text-fill-color: #000; }
 
 .App.dark {
-  background: #000;
-  color: #fff; }
+  background: #0e0e0f;
+  color: #f0f2f3; }
   .App.dark a {
-    color: #fff; }
+    color: #f0f2f3; }
   .App.dark .mdi {
-    color: #fff; }
+    color: #f0f2f3; }
   .App.dark input {
-    background: #000 !important;
-    border-color: #fff;
-    color: #fff !important; }
+    background: #0e0e0f !important;
+    border-color: #f0f2f3;
+    color: #f0f2f3 !important; }
   .App.dark input:-webkit-autofill, .App.dark textarea:-webkit-autofill, .App.dark select:-webkit-autofill {
-    -webkit-box-shadow: inset 0 0 0 50px #000 !important;
-    -webkit-text-fill-color: #fff; }
+    -webkit-box-shadow: inset 0 0 0 50px #0e0e0f !important;
+    -webkit-text-fill-color: #f0f2f3; }
 
 .header {
   display: flex;
