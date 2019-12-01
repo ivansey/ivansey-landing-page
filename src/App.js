@@ -35,7 +35,7 @@ class App extends React.Component {
                     <Header/>
                     <MetaTags>
                         <meta name="theme-color"
-                              content={this.props.appStateActive.darkMode === false ? "#fff" : "#000"}/>
+                              content={this.props.appStateActive.darkMode === false ? "#0078ff" : "#262627"}/>
                     </MetaTags>
                     <Route exact path="/" component={About}/>
                     <Route path="/example" component={Example}/>
