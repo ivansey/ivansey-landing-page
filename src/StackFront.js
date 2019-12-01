@@ -6,7 +6,7 @@ class StackFront extends React.Component {
         return <div className="page">
             <h2 className="title">Стек технологий дизайна</h2>
             <h3 className="subtitle">Я занимаюсь версткой страниц и созданием веб-приложений. Ниже перечислю изученные технологии:</h3>
-            <div className="row">
+            <div className="wrap">
                 <Technology icon="language-html5" title="HTML5" color="#EF6C00"/>
                 <Technology icon="language-css3" title="CSS3" color="#1565C0"/>
                 <Technology icon="sass" title="SASS (SCSS)" color="#AB47BC"/>

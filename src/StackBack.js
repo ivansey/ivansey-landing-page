@@ -6,7 +6,7 @@ class StackBack extends React.Component {
         return <div className="page">
             <h2 className="title">Стек технологий серверной части</h2>
             <h3 className="subtitle">Так же я занимаюсь созданием сервисов, API, и различным бекэнд частью для сайта. ВОт список технологий:</h3>
-            <div className="row">
+            <div className="wrap">
                 <Technology icon="nodejs" title="NodeJS" color="#81C784"/>
                 <Technology icon="language-php" title="PHP" color="#9575CD"/>
                 <Technology icon="database" title="MySQL/MariaDB и MongoDB"/>

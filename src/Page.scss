@@ -26,6 +26,11 @@
   & .row {
     width: 95%;
   }
+
+  & .wrap {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 400px) {
