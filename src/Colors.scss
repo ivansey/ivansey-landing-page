@@ -1,10 +1,18 @@
 $background: #fff;
 $colorText: #000;
+$colorTextLight: #fff;
 $borderColor: #000;
+
+$headerBackground: #0078ff;
+$titleColor: #fff;
 
 $backgroundDark: #0e0e0f;
 $colorTextDark: #f0f2f3;
+$colorTextLightDark: #f0f2f3;
 $borderColorDark: #f0f2f3;
+
+$headerBackgroundDark: #262627;
+$titleColorDark: #d50000;
 
 @mixin removeAutoFill ($background, $color) {
   input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
