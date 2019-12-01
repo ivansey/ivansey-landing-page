@@ -2,7 +2,6 @@ import React from "react";
 import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import axios from "axios";
-import {checkToken} from "./actions/checkToken";
 import cookies from "react-cookies";
 import {Link} from "react-router-dom";
 
@@ -84,10 +83,4 @@ let mapStateToProps = (state) => {
     }
 };
 
-let mapDispatchToProps = (dispatch) => {
-    return bindActionCreators({
-        checkToken: checkToken
-    }, dispatch);
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Admin);
+export default connect(mapStateToProps)(Admin);
