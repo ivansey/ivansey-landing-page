@@ -3,7 +3,7 @@ let md5 = require('md5');
 
 let usersSchema = new mongoose.Schema ({
     email: String,
-    pass: String
+    pass: String,
 });
 
 usersSchema.method("setPass", (pass) => {
