@@ -5,6 +5,10 @@
 /node_modules
 /package-lock.json
 /backend/package-lock.json
+/.env
+/backend/.env
+/src/Reg.js
+/src/.sass-cache
 /.pnp
 .pnp.js
 
