@@ -30,6 +30,7 @@ mongoose.connect("mongodb://localhost/ivansey-landing-page");
 
 let usersModel = require('./models/users');
 let userSessionModel = require('./models/userSession');
+let technologyModel = require("./models/technology");
 
 let app = express();
 
@@ -115,4 +116,94 @@ app.post("/api/v1/users/admin/get", (req, res) => {
     });
 });
 
-app.listen(PORT, () => console.log("Server started on port " + PORT));
+app.post('/api/v1/technology/get', (req, res) => {
+    technologyModel.find({type: req.body.type}).then(data => {
+        if (data.length === 0) {
+            return res.json({
+                response: "NOT_FOUND", data: [{}]
+            });
+        } else {
+            return res.json({
+                response: "DONE", data: data
+            });
+        }
+    });
+});
+
+app.post("/api/v1/technology/add", (req, res) => {
+    userSessionModel.find({token: req.body.token}).then(data => {
+        if (data.length === 0) {
+            return res.json({response: "NOT_ACCESS"});
+        }
+
+        let technology = new technologyModel({
+            name: req.body.name,
+            description: req.body.description,
+            icon: req.body.icon,
+            type: req.body.type,
+        });
+        technology.save();
+        return res.json({response: "DONE"});
+    });
+});
+
+app.post("/api/v1/technology/delete", (req, res) => {
+    userSessionModel.find({token: req.body.token}).then(data => {
+        if (data.length === 0) {
+            return res.json({response: "NOT_ACCESS"});
+        }
+
+        technologyModel.remove({_id: req.body._id}).then((data) => {
+            return res.json({
+                response: "DONE"
+            });
+        }).catch((err) => {
+            return res.status(500).send(err);
+        });
+    });
+});
+
+app.post("/api/v1/technology/edit", (req, res) => {
+    userSessionModel.find({token: req.body.token}).then(data => {
+        if (data.length === 0) {
+            return res.json({response: "NOT_ACCESS"});
+        }
+
+        technologyModel.findById(req.body._id).then((data) => {
+            if (data.length === 0) {
+                return res.json({response: "NOT_FOUND"})
+            }
+
+            technologyModel.updateOne({_id: req.body._id}, {
+                name: req.body.name,
+                description: req.body.description,
+                icon: req.body.icon,
+                type: req.body.type,
+            }).then((data) => {
+                return res.json({response: "DONE"})
+            }).catch((err) => {
+                return res.status(500).send(err)
+            });
+        }).catch((err) => {
+            return res.status(500).send(err)
+        });
+    });
+});
+
+app.listen(PORT, () => {
+    usersModel.find({email: "admin"}).then((data) => {
+        if (data.length === 0) {
+            console.error("Not found admin user\nCreate admin user...");
+            let user = new usersModel({
+                email: "admin",
+                pass: md5("admin"),
+            });
+            user.save().then(() => {
+                console.log("Add admin user\nLogin: admin\nPassword: admin");
+            }).catch((err) => {
+                console.error("Error add admin user\n" + err);
+            });
+        }
+    });
+    console.log("Server started on port " + PORT);
+});
