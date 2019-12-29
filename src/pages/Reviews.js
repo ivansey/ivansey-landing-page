@@ -1,5 +1,5 @@
 import React from 'react';
-import Review from "./Review";
+import Review from "../components/Review";
 import MetaTags from "react-meta-tags";
 
 class Reviews extends React.Component {

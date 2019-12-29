@@ -1,6 +1,6 @@
 import React from 'react';
-import StackFront from "./StackFront";
-import StackBack from "./StackBack";
+import StackFront from "../components/StackFront";
+import StackBack from "../components/StackBack";
 import MetaTags from "react-meta-tags";
 
 class About extends React.Component {

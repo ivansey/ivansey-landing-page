@@ -1,5 +1,5 @@
 import React from 'react';
-import ExamplePost from "./ExamplePost";
+import ExamplePost from "../components/ExamplePost";
 import MetaTags from "react-meta-tags";
 
 class Example extends React.Component {

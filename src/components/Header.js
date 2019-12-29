@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import {changeDarkMode} from "./actions";
+import {changeDarkMode} from "../actions";
 import axios from "axios";
 import cookies from "react-cookies";
 

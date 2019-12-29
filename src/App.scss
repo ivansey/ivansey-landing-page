@@ -1,4 +1,4 @@
-@import "Colors";
+@import "scss/Colors";
 
 * {
   margin: 0;
@@ -119,9 +119,9 @@ input {
   @include removeAutoFill($backgroundDark, $colorTextDark);
 }
 
-@import "Header";
-@import "Page";
-@import "Technology";
-@import "ExamplePost";
-@import "Contact";
-@import "Footer";
+@import "scss/Header";
+@import "scss/Page";
+@import "scss/Technology";
+@import "scss/ExamplePost";
+@import "scss/Contact";
+@import "scss/Footer";

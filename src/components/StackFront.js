@@ -1,5 +1,5 @@
 import React from 'react';
-import Technology from "./Technology";
+import Technology from "../pages/Technology";
 
 class StackFront extends React.Component {
     render() {
