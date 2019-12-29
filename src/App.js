@@ -6,7 +6,6 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import Reviews from "./Reviews";
 import Login from "./Login";
-// import Reg from "./Reg";
 import Admin from "./Admin";
 import {BrowserRouter, Route} from "react-router-dom";
 import {connect} from "react-redux";
@@ -42,7 +41,6 @@ class App extends React.Component {
                     <Route path="/reviews" component={Reviews}/>
                     <Route exact path="/admin" component={Admin}/>
                     <Route path="/admin/login" component={Login}/>
-                    {/*<Route path="/admin/reg" component={Reg}/>*/}
                     <Route path="/admin/login/redirect" component={() => {
                         window.location.href = "/admin";
                     }}/>
