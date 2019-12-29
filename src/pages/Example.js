@@ -16,7 +16,15 @@ class Example extends React.Component {
             <div className="row">
                 <ExamplePost title="Портфолио Екатерины Булейко"
                              desc="Личное портфолио копирайтера с небольшой админкой для управления примерами работ, отзывами и опповещением через ВК о заказах"
-                             tags="Портфолио, SASS, NodeJS, Express, MongoDB, ReactJS" url="http://katttarinawriter.ru/"
+                             tags="Портфолио, SASS, JS, NodeJS, Express, MongoDB, ReactJS" url="http://katttarinawriter.ru/"
+                             urlTitle="Открыть сайт"/>
+                <ExamplePost title="Reklainer"
+                             desc="Одностраничный лендинг с возможностью выбора товара и его оплаты"
+                             tags="Лендинг, продажи, SASS, JS, ReactJS, API, онлайн-оплата" url="https://reklainer.com/"
+                             urlTitle="Открыть сайт"/>
+                <ExamplePost title="Какой сегодня праздник?"
+                             desc="Сервис для просмотра праздников на любой день"
+                             tags="Сервис, даты, PHP, JS, HTML, CSS, Bootstrap, MySQL\MariaDB, Apache, админ-панель" url="https://kakoysegodnyaprazdnik.info/"
                              urlTitle="Открыть сайт"/>
             </div>
         </div>
