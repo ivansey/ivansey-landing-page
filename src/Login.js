@@ -35,7 +35,8 @@ class Login extends React.Component {
             this.setState({response: res.data.response});
             if (res.data.response === "DONE") {
                 cookies.save("token", res.data.token, {
-                    path: "/"
+                    path: "/",
+                    expires: new Date(Date.now() + 60 * 60 * 60 * 60 * 24 * 14),
                 });
             }
         });
