@@ -5,6 +5,7 @@ let technologySchema = new mongoose.Schema({
     description: String,
     icon: String,
     type: String,
+    color: String,
 });
 
 let technologyModel = mongoose.model("technology", technologySchema);
